@@ -1,10 +1,12 @@
 import React, {FC} from 'react';
 import IPhoto from '../interfaces/IPhoto';
 import './GalleryLayout.css';
+
 interface GalleryLayoutProps {
     photos: IPhoto[];
 }
-const GalleryLayout: FC<GalleryLayoutProps> = ({ photos }) => {
+
+const GalleryLayout: FC<GalleryLayoutProps> = ({photos}) => {
     return (
         <div className="gallery">
             {photos.map((photo) => (
